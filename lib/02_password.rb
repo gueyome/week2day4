@@ -1,9 +1,11 @@
+#définir son password
 def signup 
     puts "Définissez un mot de passe svp"
     password = gets.chomp
     return password
 end
 
+#vérifier si le password rentré est bon
 def login (password_defined)
     puts "Entrez votre mot de passe svp"
     input = gets.chomp
@@ -14,6 +16,7 @@ def login (password_defined)
     puts "Bravo, vous êtes connecté"
 end
 
+#afficher l'écran d'acceuil
 def welcome_screen 
     puts "Bienvenue dans ta zone secrète !"
     puts "Jay doit s'acheter des chaussures de jujitsu ce soir."
@@ -21,6 +24,7 @@ def welcome_screen
     puts "Kim doit fucking commencer les katas"
 end
 
+#programme principal
 def perform
 login(signup)
 welcome_screen
